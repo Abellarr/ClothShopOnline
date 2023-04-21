@@ -2,16 +2,17 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
+const mongoose = require("mongoose");
 const port = process.env.PORT || 8000; // Port that Express listens to for requests
 
 app.use(cors());
-
 app.use(express.json());
 
 // define structure for accessing database
 //const { Pool } = require('pg');
 const connDB = require("./connDB");
 const pool = connDB.getPool();
+
 
 // listen to the port
 app.listen(port, function () {

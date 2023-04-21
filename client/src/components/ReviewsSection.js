@@ -7,7 +7,8 @@ import "../componentsCSS/revQuest.css";
 const ReviewSection = (props) => {
   const [allReviews, setAllReviews] = useState([]);
 
-  const host = "https://phill-in-the-blank.onrender.com";
+  // const host = "https://phill-in-the-blank.onrender.com";
+  const host = "http://localhost:8000";
 
   const reviewPageNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 

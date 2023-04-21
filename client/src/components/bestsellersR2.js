@@ -4,7 +4,8 @@ import Slider from "react-slick";
 const Carousel = () => {
   const [info, setInfo] = useState([]);
 
-  const host = "https://phill-in-the-blank.onrender.com";
+  // const host = "https://phill-in-the-blank.onrender.com";
+  const host = "http://localhost:8000";
 
   const getData = async () => {
     try {

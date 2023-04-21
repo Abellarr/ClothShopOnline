@@ -7,7 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = () => {
   const [info, setInfo] = useState([]);
 
-  const host = "https://phill-in-the-blank.onrender.com";
+  // const host = "https://phill-in-the-blank.onrender.com";
+  const host = "http://localhost:8000";
 
   const getData = async () => {
     try {

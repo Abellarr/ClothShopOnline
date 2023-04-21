@@ -1,8 +1,18 @@
-version: '3'
+version: '3.9'
 # This example runs three servers, PostgreSQL, pgAdmin, and a frontEnd server
 
 # Each service runs in a seperate container
-services:
+services:     
+
+  mongodb_container:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_DATABASE: mydatabase
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_data:/data/db
+
   shopping-db:
     container_name: shopping-db
     image: postgres:latest
@@ -34,6 +44,7 @@ services:
       - shopping-db
 
 volumes:
+  mongodb_data:
   pgdatasource:
   pgadmin-data:
 
