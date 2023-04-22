@@ -1,19 +1,19 @@
 module.exports = mongoose => {
     const schema = mongoose.Schema(
         {
-          userName: String,
-          isVerified: Boolean,
+          username: String,
+          isverified: Boolean,
           date: String,
           rating: Number,
           delivery: String,
           decoration: String,
-          overallRating: Number,
+          overallrating: Number,
           fit: String,
-          qualityRating: Number,
+          qualityrating: Number,
           title: String,
           notes: String,
-          numThumbsUp: Number,
-          numThumbsDown: Number
+          numthumbsup: Number,
+          numthumbsdown: Number
         }
     );
 

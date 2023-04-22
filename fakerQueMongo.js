@@ -1,5 +1,4 @@
 const { faker } = require('@faker-js/faker');
-const { reviews } = require('./mongo/models');
 const host = "http://localhost:8000";
 
 
@@ -28,16 +27,16 @@ const seedQuestions = async () => {
 
     for (let i = 0; i < SEED_QUESTIONS_COUNT; i++) {
         questions.push({
-            userNameQ: faker.internet.userName(),
-            isVerified: true,
-            dateQuestion: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-17)+17)}`,
-            question: faker.lorem.sentence(Math.floor(Math.random*(15-5)+5)),
-            numAnswers: 1,
-            userNameA: 'Cloth Shop Online',
-            dateAnswer: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-21)+21)}`,
-            answer: faker.lorem.sentence(Math.floor(Math.random*(15-5)+5)),
-            numThumbsUp: faker.datatype.number({ min: 10, max: 100 }),
-            numThumbsDown: faker.datatype.number({ min: 10, max: 100 })
+            usernameq: faker.internet.userName(),
+            isverified: true,
+            datequestion: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-17)+17)}`,
+            question: faker.lorem.sentence(),
+            numanswers: 1,
+            usernamea: 'Cloth Shop Online',
+            dateanswer: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-21)+21)}`,
+            answer: faker.lorem.sentence(),
+            numthumbsup: faker.datatype.number({ min: 10, max: 100 }),
+            numthumbsdown: faker.datatype.number({ min: 10, max: 100 })
         });
     }
     
@@ -61,4 +60,4 @@ const seedQuestions = async () => {
     }
 };
 
-seedQuestions();
+delQuestions().then(() => seedQuestions());

@@ -47,13 +47,13 @@ const seedProducts = async () => {
     const products = [];
     for (let i = 0; i < SEED_PRODUCTS_COUNT; i++) {
         products.push({
-            imageLink: imageLks[Math.floor(Math.random() * 17)],
-            productLink: null,
+            imagelink: imageLks[Math.floor(Math.random() * 17)],
+            productlink: null,
             style: faker.commerce.product(),
-            productName: faker.commerce.productName(),
+            productname: faker.commerce.productName(),
             rating: faker.datatype.float({ min: 3, max: 5, precision: 0.1 }),
-            numRatings: faker.datatype.number({ min:10, max: 900 }),
-            price:faker.datatype.float({ min: 5, max: 40, precision: 0.01}),
+            numratings: faker.datatype.number({ min:10, max: 900 }),
+            price:faker.datatype.float({ min: 5, max: 40, precision: 0.01})
         });
     }
 

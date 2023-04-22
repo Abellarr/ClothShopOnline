@@ -4,19 +4,19 @@ const Review = db.reviews;
 // Create and Save a new Products
 exports.create = (req, res) => {
     const review = new Review({
-        userName: req.body.userName,
-        isVerified: req.body.isVerified,
+        username: req.body.username,
+        isverified: req.body.isverified,
         date: req.body.date,
         rating: req.body.rating,
         delivery: req.body.delivery,
         decoration: req.body.decoration,
-        overallRating: req.body.overallRating,
+        overallrating: req.body.overallrating,
         fit: req.body.fit,
-        qualityRating: req.body.qualityRating,
+        qualityrating: req.body.qualityrating,
         title: req.body.title,
         notes: req.body.notes,
-        numThumbsUp: req.body.numThumbsUp,
-        numThumbsDown: req.body.numThumbsDown,
+        numthumbsup: req.body.numthumbsup,
+        numthumbsdown: req.body.numthumbsdown,
       });
     
     review.save(review)

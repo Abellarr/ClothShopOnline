@@ -4,16 +4,16 @@ const Question = db.questions;
 // Create and Save a new Products
 exports.create = (req, res) => {
     const question = new Question({
-        userNameQ: req.body.userNameQ,
-        isVerified: req.body.isVerified,
-        dateQuestion: req.body.dateQuestion,
+        usernameq: req.body.usernameq,
+        isverified: req.body.isverified,
+        datequestion: req.body.datequestion,
         question: req.body.question,
-        numAnswers: req.body.numAnswers,
-        userNameA: req.body.userNameA,
-        dateAnswer: req.body.dateAnswer,
+        numanswers: req.body.numanswers,
+        usernamea: req.body.usernamea,
+        dateanswer: req.body.dateanswer,
         answer: req.body.answer,
-        numThumbsUp: req.body.numThumbsUp,
-        numThumbsDown: req.body.numThumbsDown,
+        numthumbsup: req.body.numthumbsup,
+        numthumbsdown: req.body.numthumbsdown,
       });
     
     question.save(question)

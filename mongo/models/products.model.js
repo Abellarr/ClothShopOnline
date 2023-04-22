@@ -1,12 +1,12 @@
 module.exports = mongoose => {
     const schema = mongoose.Schema(
         {
-          imageLink: String,
-          productLink: String,
+          imagelink: String,
+          productlink: String,
           style: String,
-          productName: String,
+          productname: String,
           rating: Number,
-          numRatings: Number,
+          numratings: Number,
           price: Number
         }
     );

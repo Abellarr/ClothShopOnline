@@ -16,6 +16,7 @@ const ReviewSection = (props) => {
     try {
       let response = await fetch(host + "/api/reviews");
       let data = await response.json();
+      console.log(data);
       setAllReviews(data);
     } catch (err) {
       console.error(err.message);

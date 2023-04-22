@@ -1,9 +1,8 @@
 const { faker } = require('@faker-js/faker');
-const { reviews } = require('./mongo/models');
 const host = "http://localhost:8000";
 
 
-const SEED_REVIEWS_COUNT = 5;
+const SEED_REVIEWS_COUNT = 6;
 
 
 const delReviews = async () => {
@@ -28,22 +27,22 @@ const seedReviews = async () => {
 
     for (let i = 0; i < SEED_REVIEWS_COUNT; i++) {
         reviews.push({
-            userName: faker.internet.userName(),
-            isVerified: false,
+            username: faker.internet.userName(),
+            isverified: true,
             date: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-17)+17)}`,
             rating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
             delivery: (Math.random() > 5 ? 'On time': 'Early'),
             decoration: faker.commerce.productName(),
-            overallRating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
+            overallrating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
             fit: faker.commerce.productAdjective(),
-            qualityRating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
+            qualityrating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
             title: faker.lorem.sentence(5),
             notes: faker.lorem.sentence(),
-            numThumbsUp: faker.datatype.number({ min: 10, max: 100 }),
-            numThumbsDown: faker.datatype.number({ min: 10, max: 100 })
+            numthumbsup: faker.datatype.number({ min: 10, max: 100 }),
+            numthumbsdown: faker.datatype.number({ min: 10, max: 100 })
         });
     }
-    
+
     for (let i=0; i < reviews.length; i++) {
         try {
             const response = await fetch(`${host}/api/reviews`, 
@@ -64,4 +63,4 @@ const seedReviews = async () => {
     }
 };
 
-seedReviews();
+delReviews().then(() => seedReviews());

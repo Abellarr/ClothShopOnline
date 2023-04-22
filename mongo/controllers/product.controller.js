@@ -4,12 +4,12 @@ const Product = db.products;
 // Create and Save a new Products
 exports.create = (req, res) => {
     const product = new Product({
-        imageLink: req.body.imageLink,
-        productLink: req.body.productLink,
+        imagelink: req.body.imagelink,
+        productlink: req.body.productlink,
         style: req.body.style,
-        productName: req.body.productName,
+        productname: req.body.productname,
         rating: req.body.rating,
-        numRatings: req.body.numRatings,
+        numratings: req.body.numratings,
         price: req.body.price
       });
     
