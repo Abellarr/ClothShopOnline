@@ -31,7 +31,7 @@ const seedReviews = async () => {
             isverified: true,
             date: `${Math.ceil(Math.random()*12)}/${Math.ceil(Math.random()*28)}/${Math.ceil(Math.random()*(22-17)+17)}`,
             rating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
-            delivery: (Math.random() > 5 ? 'On time': 'Early'),
+            delivery: (Math.random() > .5 ? 'On time': 'Early'),
             decoration: faker.commerce.productName(),
             overallrating: faker.datatype.float({ min: 2, max: 5, precision: 0.1}),
             fit: faker.commerce.productAdjective(),

@@ -2,7 +2,7 @@ const { faker } = require('@faker-js/faker');
 const host = "http://localhost:8000";
 
 
-const SEED_PRODUCTS_COUNT = 5000;
+const SEED_PRODUCTS_COUNT = 10000;
 
 
 const delProducts = async () => {

@@ -9,7 +9,7 @@ const pool = new Pool({
     port: 5432,
 });
 
-const SEED_PRODUCTS_COUNT = 5000;
+const SEED_PRODUCTS_COUNT = 10000;
 
 const seedProducts = async () => {
     const imageLks = [
