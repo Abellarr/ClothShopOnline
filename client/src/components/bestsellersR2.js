@@ -14,7 +14,7 @@ const Carousel = () => {
         throw new Error(`Error fetching products. Status: ${response.status}`);
       }
       const data = await response.json();
-      console.table(data);
+      // console.table(data);
       setInfo(data);
     } catch (error) {
       console.error("Error fetching products:", error);
