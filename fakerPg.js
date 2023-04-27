@@ -51,7 +51,7 @@ const seedProducts = async () => {
         const queryString =
             'INSERT INTO products (imageLink, productLink, style, productName, rating, numRatings, price) VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING *';
         for (let i = 0; i < SEED_PRODUCTS_COUNT; i++) {
-            console.log(`seeded ${i+1} users!`)
+            console.log(`seeded ${i+1} products!`)
             const { imageLink, productLink, style, productName, rating, numRatings, price } = products[i];
             await pool.query(queryString, [imageLink, productLink, style, productName, rating, numRatings, price]);
         }
