@@ -8,7 +8,7 @@ The original project was a standard PERN (PostgreSQL, Express, React, Node) stac
 
 During initial research for this project, I narrowed my choice of database down to Redis and MongoDB, and chose to go with MongoDB for a test database because it is completely different than anything I've worked with before and it seems to be a very popular choice for companies that build their applications outside of the RDBMS norms. The knowledge, wisdom, and experience I've gained through the research, creating, and testing of this project was absolutely amazing and I'm fortunate to have the opportunity to work on something like this during my coursework.
 
-## Testing/Methodologies and Results
+## Testing, Methodologies and Results
 
 To see a complete report on my testing, methodologies and results, click the image below to check out my video:
 
