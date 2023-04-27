@@ -45,12 +45,12 @@ If you would like to try this setup out and run some of the tests for yourself, 
     
 **To seed bulk data into the databases:**
 
-For PostgreSQL database:
+*For PostgreSQL database*:
 1. From the command line, run `nodemon apiServer.js`
 2. From your editor, view the fakerPg.js file and look for a variable named "SEED_PRODUCTS_COUNT" which will be set to a number. Modify that number to how many products you want to create and save the file.
 3. From the command line, run `node fakerPg.js`
 
-For MongoDB database:
+*For MongoDB database*:
 1. From the command line, run `nodemon mongServer.js`
 2. From your editor, view the fakerProdMongo.js file and look for a variable named "SEED_PRODUCTS_COUNT" which will be set to a number. Modify that number to how many products you want to create and save the file.
 3. From the command line, run `node fakerProdMongo.js`
@@ -62,10 +62,10 @@ Have fun testing it out for yourself!
 
 While the SDC Project was more of a solo venture, I want to give a huge shoutout to the following:
 
-- Kevin Sossa for being instrumental in helping me get Grafana K6 up and running, and insight for testing the server portion of the project.
-- Shuyi Hoo for saving my project by helping me get through some initial struggles with getting my MongoDB database working and seeded.
-- Brennan Mulligan for his expert insight to Faker and guidance with getting my bulk data files fleshed out.
-- Phil Witkin for being an awesome instructor and guiding us along our journey.
+- **Kevin Sossa** for being instrumental in helping me get Grafana K6 up and running, and insight for testing the server portion of the project.
+- **Shuyi Hoo** for saving my project by helping me get through some initial struggles with getting my MongoDB database working and seeded.
+- **Brennan Mulligan** for his expert insight to Faker and guidance with getting my bulk data files fleshed out.
+- **Phil Witkin** for being an awesome instructor and guiding us along our journey.
 
 Another shoutout to the team who created the original project and for making outstanding documentation that guided me through the intial setup:
 - Melvin Richardson
@@ -76,10 +76,10 @@ Another shoutout to the team who created the original project and for making out
 
 ## Technologies Used
 
-- Front-End - Testing was completed with Lighthouse (ChromeDevTools)
-- Servers - Both servers were built with Express utilizing Node and testing was completed using Grafana K6
-- Database - The PostgreSQL and MongoDB databases were built and containerized in Docker utilizing Docker-Compose
-- Original Project - HTML5, CSS3, JavaScript, React, Node, PostgreSQL, Docker, Render
+- *Front-End* - Testing was completed with Lighthouse (ChromeDevTools)
+- *Servers* - Both servers were built with Express utilizing Node and testing was completed using Grafana K6
+- *Database* - The PostgreSQL and MongoDB databases were built and containerized in Docker utilizing Docker-Compose
+- *Original Project* - HTML5, CSS3, JavaScript, React, Node, PostgreSQL, Docker, Render
 
 
 
