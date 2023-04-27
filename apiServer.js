@@ -3,10 +3,12 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const mongoose = require("mongoose");
+const compression = require('compression');
 const port = process.env.PORT || 8000; // Port that Express listens to for requests
 
 app.use(cors());
 app.use(express.json());
+app.use(compression({ level: 9 }));
 
 // define structure for accessing database
 //const { Pool } = require('pg');
