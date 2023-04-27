@@ -18,7 +18,7 @@ To see a complete report on my testing, methodologies and results, click the ima
 
 If you would like to try this setup out and run some of the tests for yourself, follow these steps:
 
-Initial setup:
+**Initial setup:**
 1. Fork and clone this repository to your desired folder
 2. Navigate to the root folder on your command line and run `npm install`
 3. Once completed, run `npm install --force --prefix client`
@@ -30,7 +30,7 @@ Initial setup:
     - On a different terminal, run `node fakerProdMongo.js`, followed by `node fakerRevMongo.js` `node fakerSizeMongo.js` and `node fakerQueMongo.js`
     - If you have MongoShell installed on your machine, you can connect to the database and run commands here to ensure the seed data is loaded
     
-To test the Front-End:
+**To test the Front-End:**
 1. Make sure one of the servers are up and running, either by running `nodemon apiServer.js` for PostgreSQL database or `nodemon mongServer.js` for MongoDB database
 2. From the command line, navigate to the /client folder and run `npm start` to start up the web application
 3. From your Chrome browser, navigate to http://localhost:3000 to load the web page
@@ -38,12 +38,12 @@ To test the Front-End:
 5. Set options to Navigation, Desktop and select the Performance checkbox under Categories
 6. Click the Analyze page load button and check out your results!
 
-To test the Server:
+**To test the Server:**
 1. Make sure one of the servers are up and running, either by running `nodemon apiServer.js` for PostgreSQL database or `nodemon mongServer.js` for MongoDB database
 2. From the command line, ensure you are on the root folder for the repo and run `node script.js`
 3. Check out your results!
     
-To seed bulk data into the databases:
+**To seed bulk data into the databases:**
 
 For PostgreSQL database:
 1. From the command line, run `nodemon apiServer.js`
