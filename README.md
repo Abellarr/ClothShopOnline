@@ -12,7 +12,7 @@ During initial research for this project, I narrowed my choice of database down 
 
 To see a complete report on my testing, methodologies and results, click the image below to check out my video:
 
-> Image with link goes here (still working on it at the moment)
+[![Video Thumbnail](./images/SDC-image-for-link.png)](https://www.youtube.com/watch?v=CgUqBXYZY1c)
 
 ## Setup
 
